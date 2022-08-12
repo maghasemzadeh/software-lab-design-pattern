@@ -1,5 +1,9 @@
+package AbstractFactoryPattern.main;
+
 public interface AbstractFlower {
-    public int petalCount;
-    public int petalSize;
-    public int height;
+
+    public String getName();
+
+    public void setName(String name);
+    
 }

@@ -1,6 +1,13 @@
+package AbstractFactoryPattern.main;
+
 public interface AbstractTree {
-    public int height;
-    public int trunkSize;
-    public int leafSize;
+
+    public String getName();
     
+    public void setName(String name);
+    
+    public int getHeight();
+    
+    public void setHeight(int height);
+
 }

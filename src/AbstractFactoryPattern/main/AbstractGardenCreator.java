@@ -1,4 +1,6 @@
+package AbstractFactoryPattern.main;
+
 public interface AbstractGardenCreator {
-    Tree createTree();
-    Flower createFlower();
+    AbstractTree createTree();
+    AbstractFlower createFlower();
 }
