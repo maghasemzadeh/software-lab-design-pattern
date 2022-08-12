@@ -1,11 +1,12 @@
-Class JapaneseGardenCreator(AbstractGardenCreator) {
-    @Override
-    public Tree createTree() {
+package AbstractFactoryPattern.main;
 
+public class JapaneseGardenCreator implements AbstractGardenCreator {
+    
+    public AbstractTree createTree() {
+        return new JapeneseTree("Maple", 8, "Loquat");
     }
 
-    @Override
-    public Flower createFlower() {
-        
+    public AbstractFlower createFlower() {
+        return new JapeneseFlower("Cherry", "Loquat");
     }
 }

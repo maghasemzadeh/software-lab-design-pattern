@@ -1,11 +1,12 @@
-Class IranianGardenCreator(AbstractGardenCreator) {
-    @Override
-    public Tree createTree() {
+package AbstractFactoryPattern.main;
 
+public class IranianGardenCreator implements AbstractGardenCreator {
+    
+    public AbstractTree createTree() {
+        return new IranianTree("Parrotia", 10, 3);
     }
 
-    @Override
-    public Flower createFlower() {
-        
+    public AbstractFlower createFlower() {
+        return new IranianFlower("Nilofar", 25, 5);
     }
 }
